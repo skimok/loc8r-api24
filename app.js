@@ -16,7 +16,8 @@ var app = express();
 
 const cors = require('cors');
 const corsOptions = {
-  origin: 'https://loc8r-netlify-app.netlify.app',
+  // origin: 'https://loc8r-netlify-app.netlify.app',
+  origin: '*',
   optionsSuccessStatus: 200 // For legacy browser support
 };
 app.use(cors(corsOptions));
